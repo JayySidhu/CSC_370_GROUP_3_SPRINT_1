@@ -1,0 +1,16 @@
+PASS archived kick-off schema and data load
+PASS capture original references
+PASS construct invalid legacy ownership
+PASS preflight rejects invalid legacy ownership
+PASS rejected preflight preserves old application column
+PASS rejected preflight creates no assignment table
+PASS restore legacy ownership
+PASS migration executes without database reset
+PASS all legacy resume associations retained
+PASS old resume column removed
+PASS legacy application and student rows retained
+PASS upgraded schema enforces resume ownership
+PASS four ownership triggers installed
+PASS nontransactional legacy fixture loads
+PASS preflight rejects non-InnoDB legacy tables
+ALL MIGRATION CHECKS PASSED; retained disposable databases: coop_sprint1_migration_8c75f3238e30 coop_sprint1_migration_8c75f3238e30_myisam
