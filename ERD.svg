@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2700" height="2420" viewBox="0 0 2700 2420">
+<defs><style>
+.box{fill:#fff;stroke:#000;stroke-width:2}.line{fill:none;stroke:#000;stroke-width:1.6}
+text{font-family:Arial,Helvetica,sans-serif;fill:#000;text-anchor:middle;dominant-baseline:middle}
+.title{font-size:34px;font-weight:bold}.note{font-size:17px;text-anchor:start}.entity{font-size:21px;font-weight:bold}.attribute{font-size:15px}
+</style></defs><rect width="2700" height="2420" fill="#fff"/>
+<text class="title" x="1350" y="42">Co-op Application Tracker — Complete Relational ERD</text>
+<text class="note" x="48" y="82">Chen notation: entity rectangles, attribute ellipses, connecting lines; underlined attributes are primary keys; (FK) marks foreign-key columns.</text>
+<text class="note" x="48" y="111">All 9 SQL tables and 59 columns are shown. Relationship diamonds and min/max participation are in CONCEPTUAL_ERD.svg.</text>
+
+<g id="table-Student">
+<rect class="box" x="70" y="178" width="210" height="58"/><text class="entity" x="175" y="207">Student</text>
+<line class="line" x1="280" y1="207" x2="335" y2="207"/>
+<line class="line" x1="335" y1="207" x2="335" y2="447"/>
+<line class="line" x1="335" y1="255" x2="408" y2="255"/>
+<ellipse class="box" cx="520" cy="255" rx="112" ry="17"/>
+<text class="attribute" x="520" y="255" text-decoration="underline">student_id</text>
+<line class="line" x1="335" y1="303" x2="408" y2="303"/>
+<ellipse class="box" cx="520" cy="303" rx="112" ry="17"/>
+<text class="attribute" x="520" y="303">full_name</text>
+<line class="line" x1="335" y1="351" x2="408" y2="351"/>
+<ellipse class="box" cx="520" cy="351" rx="112" ry="17"/>
+<text class="attribute" x="520" y="351">username</text>
+<line class="line" x1="335" y1="399" x2="408" y2="399"/>
+<ellipse class="box" cx="520" cy="399" rx="112" ry="17"/>
+<text class="attribute" x="520" y="399">email</text>
+<line class="line" x1="335" y1="447" x2="408" y2="447"/>
+<ellipse class="box" cx="520" cy="447" rx="112" ry="17"/>
+<text class="attribute" x="520" y="447">program</text>
+</g>
+<g id="table-Employer">
+<rect class="box" x="960" y="178" width="210" height="58"/><text class="entity" x="1065" y="207">Employer</text>
+<line class="line" x1="1170" y1="207" x2="1225" y2="207"/>
+<line class="line" x1="1225" y1="207" x2="1225" y2="543"/>
+<line class="line" x1="1225" y1="255" x2="1298" y2="255"/>
+<ellipse class="box" cx="1410" cy="255" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="255" text-decoration="underline">employer_id</text>
+<line class="line" x1="1225" y1="303" x2="1298" y2="303"/>
+<ellipse class="box" cx="1410" cy="303" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="303">employer_name</text>
+<line class="line" x1="1225" y1="351" x2="1298" y2="351"/>
+<ellipse class="box" cx="1410" cy="351" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="351">industry</text>
+<line class="line" x1="1225" y1="399" x2="1298" y2="399"/>
+<ellipse class="box" cx="1410" cy="399" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="399">website</text>
+<line class="line" x1="1225" y1="447" x2="1298" y2="447"/>
+<ellipse class="box" cx="1410" cy="447" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="447">city</text>
+<line class="line" x1="1225" y1="495" x2="1298" y2="495"/>
+<ellipse class="box" cx="1410" cy="495" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="495">province</text>
+<line class="line" x1="1225" y1="543" x2="1298" y2="543"/>
+<ellipse class="box" cx="1410" cy="543" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="543">country</text>
+</g>
+<g id="table-JobPosting">
+<rect class="box" x="1850" y="178" width="210" height="58"/><text class="entity" x="1955" y="207">JobPosting</text>
+<line class="line" x1="2060" y1="207" x2="2115" y2="207"/>
+<line class="line" x1="2115" y1="207" x2="2115" y2="831"/>
+<line class="line" x1="2115" y1="255" x2="2188" y2="255"/>
+<ellipse class="box" cx="2300" cy="255" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="255" text-decoration="underline">posting_id</text>
+<line class="line" x1="2115" y1="303" x2="2188" y2="303"/>
+<ellipse class="box" cx="2300" cy="303" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="303">employer_id (FK)</text>
+<line class="line" x1="2115" y1="351" x2="2188" y2="351"/>
+<ellipse class="box" cx="2300" cy="351" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="351">job_title</text>
+<line class="line" x1="2115" y1="399" x2="2188" y2="399"/>
+<ellipse class="box" cx="2300" cy="399" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="399">work_term</text>
+<line class="line" x1="2115" y1="447" x2="2188" y2="447"/>
+<ellipse class="box" cx="2300" cy="447" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="447">location_type</text>
+<line class="line" x1="2115" y1="495" x2="2188" y2="495"/>
+<ellipse class="box" cx="2300" cy="495" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="495">city</text>
+<line class="line" x1="2115" y1="543" x2="2188" y2="543"/>
+<ellipse class="box" cx="2300" cy="543" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="543">province</text>
+<line class="line" x1="2115" y1="591" x2="2188" y2="591"/>
+<ellipse class="box" cx="2300" cy="591" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="591">country</text>
+<line class="line" x1="2115" y1="639" x2="2188" y2="639"/>
+<ellipse class="box" cx="2300" cy="639" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="639">posting_url</text>
+<line class="line" x1="2115" y1="687" x2="2188" y2="687"/>
+<ellipse class="box" cx="2300" cy="687" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="687">date_posted</text>
+<line class="line" x1="2115" y1="735" x2="2188" y2="735"/>
+<ellipse class="box" cx="2300" cy="735" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="735">application_deadline</text>
+<line class="line" x1="2115" y1="783" x2="2188" y2="783"/>
+<ellipse class="box" cx="2300" cy="783" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="783">salary_range</text>
+<line class="line" x1="2115" y1="831" x2="2188" y2="831"/>
+<ellipse class="box" cx="2300" cy="831" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="831">posting_status</text>
+</g>
+<g id="table-ApplicationStatus">
+<rect class="box" x="70" y="948" width="210" height="58"/><text class="entity" x="175" y="977">ApplicationStatus</text>
+<line class="line" x1="280" y1="977" x2="335" y2="977"/>
+<line class="line" x1="335" y1="977" x2="335" y2="1121"/>
+<line class="line" x1="335" y1="1025" x2="408" y2="1025"/>
+<ellipse class="box" cx="520" cy="1025" rx="112" ry="17"/>
+<text class="attribute" x="520" y="1025" text-decoration="underline">status_id</text>
+<line class="line" x1="335" y1="1073" x2="408" y2="1073"/>
+<ellipse class="box" cx="520" cy="1073" rx="112" ry="17"/>
+<text class="attribute" x="520" y="1073">status_name</text>
+<line class="line" x1="335" y1="1121" x2="408" y2="1121"/>
+<ellipse class="box" cx="520" cy="1121" rx="112" ry="17"/>
+<text class="attribute" x="520" y="1121">is_terminal</text>
+</g>
+<g id="table-ResumeVersion">
+<rect class="box" x="960" y="948" width="210" height="58"/><text class="entity" x="1065" y="977">ResumeVersion</text>
+<line class="line" x1="1170" y1="977" x2="1225" y2="977"/>
+<line class="line" x1="1225" y1="977" x2="1225" y2="1265"/>
+<line class="line" x1="1225" y1="1025" x2="1298" y2="1025"/>
+<ellipse class="box" cx="1410" cy="1025" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1025" text-decoration="underline">resume_id</text>
+<line class="line" x1="1225" y1="1073" x2="1298" y2="1073"/>
+<ellipse class="box" cx="1410" cy="1073" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1073">student_id (FK)</text>
+<line class="line" x1="1225" y1="1121" x2="1298" y2="1121"/>
+<ellipse class="box" cx="1410" cy="1121" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1121">resume_label</text>
+<line class="line" x1="1225" y1="1169" x2="1298" y2="1169"/>
+<ellipse class="box" cx="1410" cy="1169" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1169">version_number</text>
+<line class="line" x1="1225" y1="1217" x2="1298" y2="1217"/>
+<ellipse class="box" cx="1410" cy="1217" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1217">created_on</text>
+<line class="line" x1="1225" y1="1265" x2="1298" y2="1265"/>
+<ellipse class="box" cx="1410" cy="1265" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1265">file_name</text>
+</g>
+<g id="table-Application">
+<rect class="box" x="1850" y="948" width="210" height="58"/><text class="entity" x="1955" y="977">Application</text>
+<line class="line" x1="2060" y1="977" x2="2115" y2="977"/>
+<line class="line" x1="2115" y1="977" x2="2115" y2="1361"/>
+<line class="line" x1="2115" y1="1025" x2="2188" y2="1025"/>
+<ellipse class="box" cx="2300" cy="1025" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1025" text-decoration="underline">application_id</text>
+<line class="line" x1="2115" y1="1073" x2="2188" y2="1073"/>
+<ellipse class="box" cx="2300" cy="1073" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1073">student_id (FK)</text>
+<line class="line" x1="2115" y1="1121" x2="2188" y2="1121"/>
+<ellipse class="box" cx="2300" cy="1121" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1121">posting_id (FK)</text>
+<line class="line" x1="2115" y1="1169" x2="2188" y2="1169"/>
+<ellipse class="box" cx="2300" cy="1169" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1169">status_id (FK)</text>
+<line class="line" x1="2115" y1="1217" x2="2188" y2="1217"/>
+<ellipse class="box" cx="2300" cy="1217" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1217">date_applied</text>
+<line class="line" x1="2115" y1="1265" x2="2188" y2="1265"/>
+<ellipse class="box" cx="2300" cy="1265" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1265">source</text>
+<line class="line" x1="2115" y1="1313" x2="2188" y2="1313"/>
+<ellipse class="box" cx="2300" cy="1313" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1313">priority</text>
+<line class="line" x1="2115" y1="1361" x2="2188" y2="1361"/>
+<ellipse class="box" cx="2300" cy="1361" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1361">notes</text>
+</g>
+<g id="table-Interview">
+<rect class="box" x="70" y="1718" width="210" height="58"/><text class="entity" x="175" y="1747">Interview</text>
+<line class="line" x1="280" y1="1747" x2="335" y2="1747"/>
+<line class="line" x1="335" y1="1747" x2="335" y2="2131"/>
+<line class="line" x1="335" y1="1795" x2="408" y2="1795"/>
+<ellipse class="box" cx="520" cy="1795" rx="112" ry="17"/>
+<text class="attribute" x="520" y="1795" text-decoration="underline">interview_id</text>
+<line class="line" x1="335" y1="1843" x2="408" y2="1843"/>
+<ellipse class="box" cx="520" cy="1843" rx="112" ry="17"/>
+<text class="attribute" x="520" y="1843">application_id (FK)</text>
+<line class="line" x1="335" y1="1891" x2="408" y2="1891"/>
+<ellipse class="box" cx="520" cy="1891" rx="112" ry="17"/>
+<text class="attribute" x="520" y="1891">interview_round</text>
+<line class="line" x1="335" y1="1939" x2="408" y2="1939"/>
+<ellipse class="box" cx="520" cy="1939" rx="112" ry="17"/>
+<text class="attribute" x="520" y="1939">interview_type</text>
+<line class="line" x1="335" y1="1987" x2="408" y2="1987"/>
+<ellipse class="box" cx="520" cy="1987" rx="112" ry="17"/>
+<text class="attribute" x="520" y="1987">scheduled_at</text>
+<line class="line" x1="335" y1="2035" x2="408" y2="2035"/>
+<ellipse class="box" cx="520" cy="2035" rx="112" ry="17"/>
+<text class="attribute" x="520" y="2035">location</text>
+<line class="line" x1="335" y1="2083" x2="408" y2="2083"/>
+<ellipse class="box" cx="520" cy="2083" rx="112" ry="17"/>
+<text class="attribute" x="520" y="2083">interviewer_name</text>
+<line class="line" x1="335" y1="2131" x2="408" y2="2131"/>
+<ellipse class="box" cx="520" cy="2131" rx="112" ry="17"/>
+<text class="attribute" x="520" y="2131">result</text>
+</g>
+<g id="table-Offer">
+<rect class="box" x="960" y="1718" width="210" height="58"/><text class="entity" x="1065" y="1747">Offer</text>
+<line class="line" x1="1170" y1="1747" x2="1225" y2="1747"/>
+<line class="line" x1="1225" y1="1747" x2="1225" y2="2083"/>
+<line class="line" x1="1225" y1="1795" x2="1298" y2="1795"/>
+<ellipse class="box" cx="1410" cy="1795" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1795" text-decoration="underline">offer_id</text>
+<line class="line" x1="1225" y1="1843" x2="1298" y2="1843"/>
+<ellipse class="box" cx="1410" cy="1843" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1843">application_id (FK)</text>
+<line class="line" x1="1225" y1="1891" x2="1298" y2="1891"/>
+<ellipse class="box" cx="1410" cy="1891" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1891">hourly_wage</text>
+<line class="line" x1="1225" y1="1939" x2="1298" y2="1939"/>
+<ellipse class="box" cx="1410" cy="1939" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1939">offer_date</text>
+<line class="line" x1="1225" y1="1987" x2="1298" y2="1987"/>
+<ellipse class="box" cx="1410" cy="1987" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="1987">response_deadline</text>
+<line class="line" x1="1225" y1="2035" x2="1298" y2="2035"/>
+<ellipse class="box" cx="1410" cy="2035" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="2035">offer_status</text>
+<line class="line" x1="1225" y1="2083" x2="1298" y2="2083"/>
+<ellipse class="box" cx="1410" cy="2083" rx="112" ry="17"/>
+<text class="attribute" x="1410" y="2083">notes</text>
+</g>
+<g id="table-ApplicationResume">
+<rect class="box" x="1850" y="1718" width="210" height="58"/><text class="entity" x="1955" y="1747">ApplicationResume</text>
+<line class="line" x1="2060" y1="1747" x2="2115" y2="1747"/>
+<line class="line" x1="2115" y1="1747" x2="2115" y2="1843"/>
+<line class="line" x1="2115" y1="1795" x2="2188" y2="1795"/>
+<ellipse class="box" cx="2300" cy="1795" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1795" text-decoration="underline">application_id (FK)</text>
+<line class="line" x1="2115" y1="1843" x2="2188" y2="1843"/>
+<ellipse class="box" cx="2300" cy="1843" rx="112" ry="17"/>
+<text class="attribute" x="2300" y="1843">resume_id (FK)</text>
+</g>
+<text class="note" x="48" y="2390">For relationship names, multiplicities and FK mapping, see CONCEPTUAL_ERD.svg and RELATIONAL_SCHEMA.md.</text>
+</svg>

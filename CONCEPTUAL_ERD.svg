@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="785" viewBox="0 0 2800 1570" preserveAspectRatio="xMinYMin meet">
+<defs><style>
+.shape{fill:#fff;stroke:#000;stroke-width:2}.line{fill:none;stroke:#000;stroke-width:1.5}
+text{font-family:Arial,Helvetica,sans-serif;fill:#000;text-anchor:middle;dominant-baseline:middle}
+.title{font-size:34px;font-weight:bold}.entity{font-size:20px;font-weight:bold}.attribute{font-size:15px}
+.rel{font-size:15px;font-weight:bold}.card{font-size:14px}.note{font-size:16px;text-anchor:start}
+</style></defs><rect width="2800" height="1570" fill="#fff"/>
+<text class="title" x="1400" y="38">Co-op Application Tracker — Conceptual ERD (Chen)</text>
+<text class="note" x="40" y="76">Rectangles: entity sets · ellipses: attributes · underlined: chosen identifiers · diamonds: relationships · (min,max) labels, N = many.</text>
+<text class="note" x="40" y="104">All eight entities and 50 conceptual attributes are shown above; the relationship map below references the same entities. SQL details are in ERD.svg.</text>
+
+<g id="entity-Student">
+<rect class="shape" x="240" y="145" width="220" height="60"/><text class="entity" x="350" y="175">Student</text>
+<line class="line" x1="240" y1="175" x2="215" y2="250"/>
+<ellipse class="shape" cx="115" cy="250" rx="100" ry="17"/>
+<text class="attribute" x="115" y="250" text-decoration="underline">student_id</text>
+<line class="line" x1="240" y1="175" x2="215" y2="293"/>
+<ellipse class="shape" cx="115" cy="293" rx="100" ry="17"/>
+<text class="attribute" x="115" y="293">full_name</text>
+<line class="line" x1="240" y1="175" x2="215" y2="336"/>
+<ellipse class="shape" cx="115" cy="336" rx="100" ry="17"/>
+<text class="attribute" x="115" y="336">username</text>
+<line class="line" x1="460" y1="175" x2="485" y2="250"/>
+<ellipse class="shape" cx="585" cy="250" rx="100" ry="17"/>
+<text class="attribute" x="585" y="250">email</text>
+<line class="line" x1="460" y1="175" x2="485" y2="293"/>
+<ellipse class="shape" cx="585" cy="293" rx="100" ry="17"/>
+<text class="attribute" x="585" y="293">program</text>
+</g>
+<g id="entity-Employer">
+<rect class="shape" x="940" y="145" width="220" height="60"/><text class="entity" x="1050" y="175">Employer</text>
+<line class="line" x1="940" y1="175" x2="915" y2="250"/>
+<ellipse class="shape" cx="815" cy="250" rx="100" ry="17"/>
+<text class="attribute" x="815" y="250" text-decoration="underline">employer_id</text>
+<line class="line" x1="940" y1="175" x2="915" y2="293"/>
+<ellipse class="shape" cx="815" cy="293" rx="100" ry="17"/>
+<text class="attribute" x="815" y="293">employer_name</text>
+<line class="line" x1="940" y1="175" x2="915" y2="336"/>
+<ellipse class="shape" cx="815" cy="336" rx="100" ry="17"/>
+<text class="attribute" x="815" y="336">industry</text>
+<line class="line" x1="940" y1="175" x2="915" y2="379"/>
+<ellipse class="shape" cx="815" cy="379" rx="100" ry="17"/>
+<text class="attribute" x="815" y="379">website</text>
+<line class="line" x1="1160" y1="175" x2="1185" y2="250"/>
+<ellipse class="shape" cx="1285" cy="250" rx="100" ry="17"/>
+<text class="attribute" x="1285" y="250">city</text>
+<line class="line" x1="1160" y1="175" x2="1185" y2="293"/>
+<ellipse class="shape" cx="1285" cy="293" rx="100" ry="17"/>
+<text class="attribute" x="1285" y="293">province</text>
+<line class="line" x1="1160" y1="175" x2="1185" y2="336"/>
+<ellipse class="shape" cx="1285" cy="336" rx="100" ry="17"/>
+<text class="attribute" x="1285" y="336">country</text>
+</g>
+<g id="entity-JobPosting">
+<rect class="shape" x="1640" y="145" width="220" height="60"/><text class="entity" x="1750" y="175">JobPosting</text>
+<line class="line" x1="1640" y1="175" x2="1615" y2="250"/>
+<ellipse class="shape" cx="1515" cy="250" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="250" text-decoration="underline">posting_id</text>
+<line class="line" x1="1640" y1="175" x2="1615" y2="293"/>
+<ellipse class="shape" cx="1515" cy="293" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="293">job_title</text>
+<line class="line" x1="1640" y1="175" x2="1615" y2="336"/>
+<ellipse class="shape" cx="1515" cy="336" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="336">work_term</text>
+<line class="line" x1="1640" y1="175" x2="1615" y2="379"/>
+<ellipse class="shape" cx="1515" cy="379" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="379">location_type</text>
+<line class="line" x1="1640" y1="175" x2="1615" y2="422"/>
+<ellipse class="shape" cx="1515" cy="422" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="422">city</text>
+<line class="line" x1="1640" y1="175" x2="1615" y2="465"/>
+<ellipse class="shape" cx="1515" cy="465" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="465">province</text>
+<line class="line" x1="1860" y1="175" x2="1885" y2="250"/>
+<ellipse class="shape" cx="1985" cy="250" rx="100" ry="17"/>
+<text class="attribute" x="1985" y="250">country</text>
+<line class="line" x1="1860" y1="175" x2="1885" y2="293"/>
+<ellipse class="shape" cx="1985" cy="293" rx="100" ry="17"/>
+<text class="attribute" x="1985" y="293">posting_url</text>
+<line class="line" x1="1860" y1="175" x2="1885" y2="336"/>
+<ellipse class="shape" cx="1985" cy="336" rx="100" ry="17"/>
+<text class="attribute" x="1985" y="336">date_posted</text>
+<line class="line" x1="1860" y1="175" x2="1885" y2="379"/>
+<ellipse class="shape" cx="1985" cy="379" rx="100" ry="17"/>
+<text class="attribute" x="1985" y="379">application_deadline</text>
+<line class="line" x1="1860" y1="175" x2="1885" y2="422"/>
+<ellipse class="shape" cx="1985" cy="422" rx="100" ry="17"/>
+<text class="attribute" x="1985" y="422">salary_range</text>
+<line class="line" x1="1860" y1="175" x2="1885" y2="465"/>
+<ellipse class="shape" cx="1985" cy="465" rx="100" ry="17"/>
+<text class="attribute" x="1985" y="465">posting_status</text>
+</g>
+<g id="entity-ApplicationStatus">
+<rect class="shape" x="2340" y="145" width="220" height="60"/><text class="entity" x="2450" y="175">ApplicationStatus</text>
+<line class="line" x1="2340" y1="175" x2="2315" y2="250"/>
+<ellipse class="shape" cx="2215" cy="250" rx="100" ry="17"/>
+<text class="attribute" x="2215" y="250" text-decoration="underline">status_id</text>
+<line class="line" x1="2340" y1="175" x2="2315" y2="293"/>
+<ellipse class="shape" cx="2215" cy="293" rx="100" ry="17"/>
+<text class="attribute" x="2215" y="293">status_name</text>
+<line class="line" x1="2560" y1="175" x2="2585" y2="250"/>
+<ellipse class="shape" cx="2685" cy="250" rx="100" ry="17"/>
+<text class="attribute" x="2685" y="250">is_terminal</text>
+</g>
+<g id="entity-ResumeVersion">
+<rect class="shape" x="240" y="600" width="220" height="60"/><text class="entity" x="350" y="630">ResumeVersion</text>
+<line class="line" x1="240" y1="630" x2="215" y2="705"/>
+<ellipse class="shape" cx="115" cy="705" rx="100" ry="17"/>
+<text class="attribute" x="115" y="705" text-decoration="underline">resume_id</text>
+<line class="line" x1="240" y1="630" x2="215" y2="748"/>
+<ellipse class="shape" cx="115" cy="748" rx="100" ry="17"/>
+<text class="attribute" x="115" y="748">resume_label</text>
+<line class="line" x1="240" y1="630" x2="215" y2="791"/>
+<ellipse class="shape" cx="115" cy="791" rx="100" ry="17"/>
+<text class="attribute" x="115" y="791">version_number</text>
+<line class="line" x1="460" y1="630" x2="485" y2="705"/>
+<ellipse class="shape" cx="585" cy="705" rx="100" ry="17"/>
+<text class="attribute" x="585" y="705">created_on</text>
+<line class="line" x1="460" y1="630" x2="485" y2="748"/>
+<ellipse class="shape" cx="585" cy="748" rx="100" ry="17"/>
+<text class="attribute" x="585" y="748">file_name</text>
+</g>
+<g id="entity-Application">
+<rect class="shape" x="940" y="600" width="220" height="60"/><text class="entity" x="1050" y="630">Application</text>
+<line class="line" x1="940" y1="630" x2="915" y2="705"/>
+<ellipse class="shape" cx="815" cy="705" rx="100" ry="17"/>
+<text class="attribute" x="815" y="705" text-decoration="underline">application_id</text>
+<line class="line" x1="940" y1="630" x2="915" y2="748"/>
+<ellipse class="shape" cx="815" cy="748" rx="100" ry="17"/>
+<text class="attribute" x="815" y="748">date_applied</text>
+<line class="line" x1="940" y1="630" x2="915" y2="791"/>
+<ellipse class="shape" cx="815" cy="791" rx="100" ry="17"/>
+<text class="attribute" x="815" y="791">source</text>
+<line class="line" x1="1160" y1="630" x2="1185" y2="705"/>
+<ellipse class="shape" cx="1285" cy="705" rx="100" ry="17"/>
+<text class="attribute" x="1285" y="705">priority</text>
+<line class="line" x1="1160" y1="630" x2="1185" y2="748"/>
+<ellipse class="shape" cx="1285" cy="748" rx="100" ry="17"/>
+<text class="attribute" x="1285" y="748">notes</text>
+</g>
+<g id="entity-Interview">
+<rect class="shape" x="1640" y="600" width="220" height="60"/><text class="entity" x="1750" y="630">Interview</text>
+<line class="line" x1="1640" y1="630" x2="1615" y2="705"/>
+<ellipse class="shape" cx="1515" cy="705" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="705" text-decoration="underline">interview_id</text>
+<line class="line" x1="1640" y1="630" x2="1615" y2="748"/>
+<ellipse class="shape" cx="1515" cy="748" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="748">interview_round</text>
+<line class="line" x1="1640" y1="630" x2="1615" y2="791"/>
+<ellipse class="shape" cx="1515" cy="791" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="791">interview_type</text>
+<line class="line" x1="1640" y1="630" x2="1615" y2="834"/>
+<ellipse class="shape" cx="1515" cy="834" rx="100" ry="17"/>
+<text class="attribute" x="1515" y="834">scheduled_at</text>
+<line class="line" x1="1860" y1="630" x2="1885" y2="705"/>
+<ellipse class="shape" cx="1985" cy="705" rx="100" ry="17"/>
+<text class="attribute" x="1985" y="705">location</text>
+<line class="line" x1="1860" y1="630" x2="1885" y2="748"/>
+<ellipse class="shape" cx="1985" cy="748" rx="100" ry="17"/>
+<text class="attribute" x="1985" y="748">interviewer_name</text>
+<line class="line" x1="1860" y1="630" x2="1885" y2="791"/>
+<ellipse class="shape" cx="1985" cy="791" rx="100" ry="17"/>
+<text class="attribute" x="1985" y="791">result</text>
+</g>
+<g id="entity-Offer">
+<rect class="shape" x="2340" y="600" width="220" height="60"/><text class="entity" x="2450" y="630">Offer</text>
+<line class="line" x1="2340" y1="630" x2="2315" y2="705"/>
+<ellipse class="shape" cx="2215" cy="705" rx="100" ry="17"/>
+<text class="attribute" x="2215" y="705" text-decoration="underline">offer_id</text>
+<line class="line" x1="2340" y1="630" x2="2315" y2="748"/>
+<ellipse class="shape" cx="2215" cy="748" rx="100" ry="17"/>
+<text class="attribute" x="2215" y="748">hourly_wage</text>
+<line class="line" x1="2340" y1="630" x2="2315" y2="791"/>
+<ellipse class="shape" cx="2215" cy="791" rx="100" ry="17"/>
+<text class="attribute" x="2215" y="791">offer_date</text>
+<line class="line" x1="2560" y1="630" x2="2585" y2="705"/>
+<ellipse class="shape" cx="2685" cy="705" rx="100" ry="17"/>
+<text class="attribute" x="2685" y="705">response_deadline</text>
+<line class="line" x1="2560" y1="630" x2="2585" y2="748"/>
+<ellipse class="shape" cx="2685" cy="748" rx="100" ry="17"/>
+<text class="attribute" x="2685" y="748">offer_status</text>
+<line class="line" x1="2560" y1="630" x2="2585" y2="791"/>
+<ellipse class="shape" cx="2685" cy="791" rx="100" ry="17"/>
+<text class="attribute" x="2685" y="791">notes</text>
+</g>
+<text class="entity" x="1400" y="1000">Relationship map — binary Chen relationships</text>
+<text class="note" x="40" y="1028">Repeated entity boxes below are references to the same eight entity sets above. Each (min,max) label belongs to the adjacent entity's edge.</text>
+
+<!-- Four clear binary relationships per row -->
+<g id="relationship-Posts"><rect class="shape" x="35" y="1065" width="175" height="48"/><text class="entity" x="122" y="1089">Employer</text><line class="line" x1="210" y1="1089" x2="280" y2="1089"/><polygon class="shape" points="280,1089 330,1062 380,1089 330,1116"/><text class="rel" x="330" y="1089">Posts</text><line class="line" x1="380" y1="1089" x2="450" y2="1089"/><rect class="shape" x="450" y="1065" width="175" height="48"/><text class="entity" x="537" y="1089">JobPosting</text><text class="card" x="245" y="1060">(0,N)</text><text class="card" x="415" y="1060">(1,1)</text></g>
+<g id="relationship-Owns"><rect class="shape" x="715" y="1065" width="175" height="48"/><text class="entity" x="802" y="1089">Student</text><line class="line" x1="890" y1="1089" x2="960" y2="1089"/><polygon class="shape" points="960,1089 1010,1062 1060,1089 1010,1116"/><text class="rel" x="1010" y="1089">Owns</text><line class="line" x1="1060" y1="1089" x2="1130" y2="1089"/><rect class="shape" x="1130" y="1065" width="175" height="48"/><text class="entity" x="1217" y="1089">ResumeVersion</text><text class="card" x="925" y="1060">(0,N)</text><text class="card" x="1095" y="1060">(1,1)</text></g>
+<g id="relationship-Submits"><rect class="shape" x="1395" y="1065" width="175" height="48"/><text class="entity" x="1482" y="1089">Student</text><line class="line" x1="1570" y1="1089" x2="1640" y2="1089"/><polygon class="shape" points="1640,1089 1690,1062 1740,1089 1690,1116"/><text class="rel" x="1690" y="1089">Submits</text><line class="line" x1="1740" y1="1089" x2="1810" y2="1089"/><rect class="shape" x="1810" y="1065" width="175" height="48"/><text class="entity" x="1897" y="1089">Application</text><text class="card" x="1605" y="1060">(0,N)</text><text class="card" x="1775" y="1060">(1,1)</text></g>
+<g id="relationship-For"><rect class="shape" x="2075" y="1065" width="175" height="48"/><text class="entity" x="2162" y="1089">Application</text><line class="line" x1="2250" y1="1089" x2="2320" y2="1089"/><polygon class="shape" points="2320,1089 2370,1062 2420,1089 2370,1116"/><text class="rel" x="2370" y="1089">For</text><line class="line" x1="2420" y1="1089" x2="2490" y2="1089"/><rect class="shape" x="2490" y="1065" width="175" height="48"/><text class="entity" x="2577" y="1089">JobPosting</text><text class="card" x="2285" y="1060">(1,1)</text><text class="card" x="2455" y="1060">(0,N)</text></g>
+
+<g id="relationship-Classifies"><rect class="shape" x="35" y="1155" width="175" height="48"/><text class="entity" x="122" y="1179" font-size="16">ApplicationStatus</text><line class="line" x1="210" y1="1179" x2="280" y2="1179"/><polygon class="shape" points="280,1179 330,1152 380,1179 330,1206"/><text class="rel" x="330" y="1179" font-size="14">Classifies</text><line class="line" x1="380" y1="1179" x2="450" y2="1179"/><rect class="shape" x="450" y="1155" width="175" height="48"/><text class="entity" x="537" y="1179">Application</text><text class="card" x="245" y="1150">(0,N)</text><text class="card" x="415" y="1150">(1,1)</text></g>
+<g id="relationship-Has"><rect class="shape" x="715" y="1155" width="175" height="48"/><text class="entity" x="802" y="1179">Application</text><line class="line" x1="890" y1="1179" x2="960" y2="1179"/><polygon class="shape" points="960,1179 1010,1152 1060,1179 1010,1206"/><text class="rel" x="1010" y="1179">Has</text><line class="line" x1="1060" y1="1179" x2="1130" y2="1179"/><rect class="shape" x="1130" y="1155" width="175" height="48"/><text class="entity" x="1217" y="1179">Interview</text><text class="card" x="925" y="1150">(0,N)</text><text class="card" x="1095" y="1150">(1,1)</text></g>
+<g id="relationship-Receives"><rect class="shape" x="1395" y="1155" width="175" height="48"/><text class="entity" x="1482" y="1179">Application</text><line class="line" x1="1570" y1="1179" x2="1640" y2="1179"/><polygon class="shape" points="1640,1179 1690,1152 1740,1179 1690,1206"/><text class="rel" x="1690" y="1179">Receives</text><line class="line" x1="1740" y1="1179" x2="1810" y2="1179"/><rect class="shape" x="1810" y="1155" width="175" height="48"/><text class="entity" x="1897" y="1179">Offer</text><text class="card" x="1605" y="1150">(0,1)</text><text class="card" x="1775" y="1150">(1,1)</text></g>
+<g id="relationship-Selected"><rect class="shape" x="2075" y="1155" width="175" height="48"/><text class="entity" x="2162" y="1179">Application</text><line class="line" x1="2250" y1="1179" x2="2320" y2="1179"/><polygon class="shape" points="2320,1179 2370,1152 2420,1179 2370,1206"/><text class="rel" x="2370" y="1179">Selected</text><line class="line" x1="2420" y1="1179" x2="2490" y2="1179"/><rect class="shape" x="2490" y="1155" width="175" height="48"/><text class="entity" x="2577" y="1179">ResumeVersion</text><text class="card" x="2285" y="1150">(0,1)</text><text class="card" x="2455" y="1150">(0,N)</text></g>
+
+<text class="note" x="40" y="1270">ApplicationResume is the SQL relationship table implementing Selected; it is not an additional conceptual entity. Same-student selection is an extra integrity rule.</text>
+<text class="note" x="40" y="1300">The logical ERD separately shows all 59 SQL columns, including foreign keys. See NORMALIZATION.md for keys and the FDs implied by these multiplicities.</text>
+
+</svg>
